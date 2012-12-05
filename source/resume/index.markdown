@@ -22,6 +22,13 @@ I'm currently focused on web development with Ruby and other technologies that c
 * _OS_: Mac, Linux.
 * _Graphics_: ImageMagick, Photoshop, Illustrator.
 
+### Links
+<a href="https://github.com/trotttrotttrott" target="_blank">Github</a>,
+<a href="http://resume.github.com/?trotttrotttrott" target="_blank">Github Resume</a>,
+<a href="http://twitter.com/trotttrotttrott" target="_blank">Twitter</a>,
+<a href="http://www.linkedin.com/in/trotttrotttrott" target="_blank">LinkedIn</a>,
+<a href="http://www.facebook.com/trotttrotttrott" target="_blank">Facebook</a>
+
 ### Experience
 #### <a href="https://www.marqeta.com" target="_blank">Marqeta</a>, Emeryville, CA, St. Petersburg, FL, Montevideo, UY
 ##### Senior Web Developer, _July 2011 - Present_
@@ -38,7 +45,7 @@ I'm currently focused on web development with Ruby and other technologies that c
 #### GoSolutions, St. Petersburg, FL
 ##### Front-end Developer, _August 2009 - July 2011_
 * Contributions:
-  * Designed and implemented a variety of application features with Grails including a dashboard style user home, contact management interface, message management interface, and media sharing interface.
+  * Designed and implemented a variety of application features with Grails for contact management, message management, and media sharing.
   * Developed and implemented a custom javascript framework adhering to the Singleton/Module design pattern.
   * Developed a Grails plugin for static resource management.
 * Achievements:
@@ -57,3 +64,8 @@ I'm currently focused on web development with Ruby and other technologies that c
   * Implemented new IT products and transitioned clients from obsolete systems.
   * Maintained the stability and functionality of client computer systems by regularly creating and performing updates for applications and hardware.
   * Trained clients on Quest information technology products by conducting presentations in medical facilities throughout Florida.
+
+### Education
+#### University of Central Florida
+##### BA, Liberal Arts, _2000 - 2005_
+The Liberal Arts Track is a Bachelor of Arts degree program available to advanced students seeking an individualized, interdisciplinary, non-traditional major. Areas of Study: Digital Media, Marketing, Behavioral/Social Science, Music.
