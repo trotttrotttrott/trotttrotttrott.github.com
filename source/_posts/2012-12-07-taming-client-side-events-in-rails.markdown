@@ -165,7 +165,7 @@ The `:hola` action will render this:
 }
 ```
 
-There is a javascript method called `SomeRadNameSpace.trigger`. This method takes care of distributing the events. There would also need to be a method that allows code to subscribe to events. jquery already has some functionality for [this](http://api.jquery.com/category/events/) out of the box. Another library I like using for event management is [Backbone.js](http://http://backbonejs.org/). Both provide efficient solutions for dealing with events, however, they don't provide a lot of visibility on what is subscribing or when events occur. I find that adding some simple event logging helps a ton.
+There is a javascript method called `SomeRadNameSpace.trigger`. This method takes care of distributing the events. There would also need to be a method that allows code to subscribe to events. jquery already has some functionality for [this](http://api.jquery.com/category/events/) out of the box. Another library I like using for event management is [Backbone.js](http://backbonejs.org/). Both provide efficient solutions for dealing with events, however, they don't provide a lot of visibility on what is subscribing or when events occur. I find that adding some simple event logging helps a ton.
 
 ```coffeescript
 SomeRadNameSpace.bind = (ev, callback, context) ->
