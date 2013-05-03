@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Taming Client Side Events in Rails"
+title: "UJS, my JS, & Ruby"
 date: 2012-12-07 16:25
 comments: true
 categories: [javascript, coffeescript, ruby, rails, jquery, jquery-ujs, backbone, backbonejs]
