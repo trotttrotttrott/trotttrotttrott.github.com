@@ -13,14 +13,14 @@ I enjoy web development with Ruby and other technologies that complement Ruby ba
 
 ### Interests
 * _Web frameworks/DSLs_: Rails, Sinatra.
-* _Front-end markup/languages_: Haml, Sass, CoffeeScript.
-* _Javascript Libraries_: jQuery, Backbone.
-* _Automation/Virtualization_: Chef, Vagrant.
-* _Persistence_: MySQL, Postgres, Redis.
-* _Cloud Computing/Platforms_: AWS, Rackspace, Heroku, Hosted Chef.
+* _HTML/CSS/Javascript Abstractions_: Haml, Slim, Sass, CoffeeScript.
+* _Javascript libraries/frameworks_: jQuery, Backbone, Ember.
+* _Automation/Virtualization_: Chef, Vagrant, VirtualBox.
+* _Persistence_: MySQL, Postgres, Redis, MongoDB.
+* _Cloud Computing/Platforms_: AWS, Rackspace, Heroku.
 * _Editors_: Vim.
 * _OS_: Mac, Linux.
-* _Graphics_: Photoshop, Illustrator, ImageMagick.
+* _Graphics_: Photoshop, Illustrator, ImageMagick/RMagick.
 
 ### Links
 * <a href="https://github.com/trotttrotttrott" target="_blank">https://github.com/trotttrotttrott</a>
@@ -29,7 +29,7 @@ I enjoy web development with Ruby and other technologies that complement Ruby ba
 
 ### Experience
 #### <a href="https://www.marqeta.com" target="_blank">Marqeta, Inc.</a>, Emeryville, CA
-##### _Senior Ruby Developer, July 2011 - Present_
+##### _Software Engineer, July 2011 - Present_
 * Contributions:
   * Rails feature development and architectural planning.
   * Collaboration with remote team in Montevideo, Uruguay.
@@ -39,7 +39,7 @@ I enjoy web development with Ruby and other technologies that complement Ruby ba
 * Achievements:
   * Contributed to product launch in October 2011.
   * Lead rebranding efforts completed in August 2012.
-  * Launch of B2B programs with Jamba Juice and UFPC.
+  * Lead transition of Rails application architecture from Domain Driven to Service Oriented.
 
 #### GoSolutions, St. Petersburg, FL
 ##### _Front-end Developer, August 2009 - July 2011_
