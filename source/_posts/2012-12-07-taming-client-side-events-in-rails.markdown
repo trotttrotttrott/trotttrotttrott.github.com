@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "UJS, my JS, & Ruby"
+title: "On Rails UJS"
 date: 2012-12-07 16:25
 comments: true
-categories: [javascript, coffeescript, ruby, rails, jquery, jquery-ujs, backbone, backbonejs]
+categories: [javascript, coffeescript, ruby, rails, jquery, ujs, jquery-ujs]
 ---
 
 Passing `:remote => true` to `:link_to` and `:form_for` is a nice convention for implementing ajax in a rails app. So simple, so pretty, so far.

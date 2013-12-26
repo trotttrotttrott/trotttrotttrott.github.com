@@ -2,14 +2,14 @@
 // To give it a try, uncomment some of the lines below rebuild your blog, and see how it works.
 // If you need a handy color picker try http://hslpicker.com
 
-//$header-bg: #263347;
+$header-bg: #000;
 //$subtitle-color: lighten($header-bg, 58);
-//$nav-bg: desaturate(lighten(#8fc17a, 18), 5);
+$nav-bg: #000;
 //$nav-bg-front: image-url('noise.png');
 //$nav-bg-back: linear-gradient(lighten($nav-bg, 8), $nav-bg, darken($nav-bg, 11));
 //$sidebar-bg: desaturate(#eceff5, 8);
-//$sidebar-link-color: saturate(#526f9a, 10);
-//$sidebar-link-color-hover: darken(#7ab662, 9);
+$sidebar-link-color: darken(#999, 9);
+$sidebar-link-color-hover: #000;
 //$footer-bg: #ccc !default;
 //$footer-bg-front: image-url('noise.png');
 //$footer-bg-back: linear-gradient(lighten($footer-bg, 8), $footer-bg, darken($footer-bg, 11));
@@ -19,9 +19,9 @@
 //$solarized: light;
 
 /* If you want to tweak the Solarized colors you can do that here */
-//$base03:          #002b36; //darkest blue
-//$base02:          #073642; //dark blue
-//$base01:          #586e75; //darkest gray
+$base03:            #000;
+$base02:            #222;
+$base01:            #fff;
 //$base00:          #657b83; //dark gray
 //$base0:           #839496; //medium gray
 //$base1:           #93a1a1; //medium light gray
@@ -36,8 +36,15 @@
 //$solar-cyan:      #2aa198;
 //$solar-green:     #859900;
 
-
 /* Non highlighted code colors */
 //$pre-bg: $base03;
 //$pre-border: darken($base02, 5);
 //$pre-color: $base1;
+
+$main-color:  #999;
+
+//How links appear overall
+$link-color: darken($main-color, 10);
+$link-color-hover: darken($main-color, 100);
+$link-color-visited: darken($main-color,10);
+$link-color-active: lighten($link-color-hover,10);

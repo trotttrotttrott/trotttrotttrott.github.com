@@ -16,12 +16,16 @@ $header-subtitle-font-family: $heading-font-family !default;
 
 body > header h1 {
   font-size: 2.2em;
-  @extend .heading;
   font-family: $header-title-font-family;
   font-weight: normal;
   line-height: 1.2em;
   margin-bottom: 0.6667em;
+
+  a {
+    color: #07ff00 !important;
+  }
 }
+
 body > header h2 {
   font-family: $header-subtitle-font-family;
 }
@@ -31,6 +35,7 @@ body {
   color: $text-color;
   @extend .serif;
 }
+
 h1 {
   font-size: 2.2em;
   line-height: 1.2em;
