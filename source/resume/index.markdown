@@ -6,67 +6,103 @@ footer: false
 ---
 
 # Chris Trott
-_San Francisco, CA_
 
-### About
-I enjoy web development with Ruby and other technologies that complement Ruby based stacks. I have a strong front-end foundation, but in the last year I've spent most of my time on backend application work, infrastructure automation and continuous delivery. My roots as a programmer began with building instruments and effects modules with <a href="http://en.wikipedia.org/wiki/Reaktor" target="_blank">Reaktor</a>. Later, I became interested in client side web tech - Javascript, Actionscript. These eventually led me to the server side (in chronological order) - PHP, Java, Groovy, and finally Ruby.
+## About
 
-### Interests
-* _Web frameworks/DSLs_: Rails, Sinatra.
-* _HTML/CSS/Javascript Abstractions_: Haml, Slim, Sass, CoffeeScript.
-* _Javascript libraries/frameworks_: jQuery, Backbone, Ember.
-* _Automation/Virtualization_: Chef, Vagrant, VirtualBox.
-* _Persistence_: MySQL, Postgres, Redis, MongoDB.
-* _Cloud Computing/Platforms_: AWS, Rackspace, Heroku.
-* _Editors_: Vim.
-* _OS_: Mac, Linux.
-* _Graphics_: Photoshop, Illustrator, ImageMagick/RMagick.
+---
 
-### Links
-* <a href="https://github.com/trotttrotttrott" target="_blank">https://github.com/trotttrotttrott</a>
-* <a href="http://twitter.com/trotttrotttrott" target="_blank">http://twitter.com/trotttrotttrott</a>
-* <a href="http://www.linkedin.com/in/trotttrotttrott" target="_blank">http://www.linkedin.com/in/trotttrotttrott</a>
+* Full stack web developer, systems administrator.
+* Advocate of UNIX philosophy and Extreme Programming.
 
-### Experience
-#### <a href="https://www.marqeta.com" target="_blank">Marqeta, Inc.</a>, Emeryville, CA
-##### _Software Engineer, July 2011 - Present_
-* Contributions:
-  * Rails feature development and architectural planning.
-  * Collaboration with remote team in Montevideo, Uruguay.
-  * Infrastructure provisioning - automation with <a href="http://www.opscode.com/chef/" target="_blank">Chef</a>.
-  * Establishing/maintaining a deployment pipeline - primarily with <a href="http://git-scm.com/" target="_blank">Git</a> and <a href="http://jenkins-ci.org/" target="_blank">Jenkins</a>.
-  * Upholding <a href="http://en.wikipedia.org/wiki/Extreme_programming" target="_blank">Extreme Programming</a> best practices.
-* Achievements:
-  * Contributed to product launch in October 2011.
-  * Lead rebranding efforts completed in August 2012.
-  * Lead transition of Rails application architecture from Domain Driven to Service Oriented.
 
-#### GoSolutions, St. Petersburg, FL
-##### _Front-end Developer, August 2009 - July 2011_
-* Contributions:
-  * Grails feature development.
-  * Designed and implemented Javascript architecture.
-  * Developed a Grails plugin for asset delivery (similar to what the asset pipeline does for Rails).
-* Achievements:
-  * Lead application transition from an EJB/Servlet/JSP stack to <a href="http://grails.org/" target="_blank">Grails</a>. Core tasks included proof of concept, single sign-on implementation, and build process integration.
+## Preferred Tools
 
-#### Game Plan Direct, Tampa, FL
-##### _Data Analyst, 2008 - 2009_
-* Contributions:
-  * Developed scripts to automate the formatting of incoming data matrices for direct marketing campaigns.
-  * Provided requirements and development support for a propriety .net application that automates the creation of XMPie uPlans.
-  * Prepared print ready InDesign files.
+---
 
-#### Quest Diagnostics, Orlando, FL
-##### Client Systems Consultant, _2007 - 2008_
-* Contributions:
-  * Implemented new IT products and transitioned clients from obsolete systems.
-  * Maintained the stability and functionality of client computer systems.
-  * Trained clients on Quest information technology products.
+* Ruby, Bash, Vim
+* RSpec, Capybara, Mocha, Chai, Sinon
+* Rails, Sinatra
+* Postgres, Redis
+* Nginx, Unicorn, God
+* Ember, Ember-Data
+* Chef, Ubuntu
+* Vagrant, AWS
+* Pivotal Tracker
 
-### Education
-#### University of Central Florida
-##### _BA, Liberal Arts, 2000 - 2005_
+_Other: Java, Groovy, Grails, JUnit, MySQL, MongoDB, Heroku..._
+
+## Experience
+
+### HYFN, Hermosa Beach, CA
+___Senior Software Engineer, September 2013 - present___
+
+HYFN is an interactive design agency. While most projects come from clients, I've been working on an in-house social media advertising application. We abstract platforms from providers like Facebook and Twitter and deliver our users a normalized approach for creating, managing, and monitoring advertising campaigns.
+
+#### Achievements:
+
+* Built and released a sentiment analysis application that delivers metrics on responses to social media interaction and advertising.
+* Rebuilt internal administration application.
+* Implemented secret management strategy.
+* Led team adoption of formal deployment pipeline for continuous delivery.
+
+### Marqeta, Inc., Emeryville, CA
+___Lead Web Application Engineer, July 2011 - September 2013___
+
+Marqeta is a payments and commerce platform promoting consumer loyalty to participating merchants by rewarding users for prespending.
+
+#### Achievements:
+
+* Contributed to product launch in October 2011.
+  * Built and automated a sustainable, high-availability web infrastructure with Chef.
+  * Led web application feature development. To mention a few - payment gateway integration with Authorize.net, Experian and OFAC user verification system, REST API for mobile application consumption, role-based administration appliction.
+* Lead transition from Rail's conventional Domain Driven acrchitecture to Service Oriented.
+
+### GoSolutions, St. Petersburg, FL
+___Front-end Developer, August 2009 - July 2011___
+
+#### Contributions:
+
+* Grails feature development.
+* Designed and implemented Javascript architecture.
+* Developed a Grails plugin for asset delivery.
+
+#### Achievements:
+
+* Lead application transition from an EJB/Servlet/JSP stack to Grails. Core tasks included proof of concept, single sign-on implementation, and build automation.
+
+### Game Plan Direct, Tampa, FL
+___Data Analyst, 2008 - 2009___
+
+#### Contributions:
+
+* Developed scripts to automate the formatting of incoming data matrices for direct marketing campaigns.
+* Provided requirements and development support for a propriety .net application that automates the creation of XMPie uPlans.
+* Prepared print ready InDesign files.
+
+### Quest Diagnostics, Orlando, FL
+___Client Systems Consultant, 2007 - 2008___
+
+#### Contributions:
+
+* Implemented new IT products and transitioned clients from obsolete systems.
+* Maintained the stability and functionality of client computer systems.
+* Trained clients on Quest information technology products.
+
+## Education
+
+---
+
+### University of Central Florida
+___BA, Liberal Arts, 2000 - 2005___
+
 The Liberal Arts Track is a Bachelor of Arts degree program available to advanced students seeking an individualized, interdisciplinary, non-traditional major. Areas of Study: Digital Media, Marketing, Behavioral/Social Science, Music.
 
-<p style="font-size: 14px;">Commit history for this page can be viewed here: <br /><a href="https://github.com/trotttrotttrott/trotttrotttrott.github.com/commits/source/source/resume/index.markdown" target="_blank">https://github.com/trotttrotttrott/trotttrotttrott.github.com/commits/source/source/resume/index.markdown</a></p>
+## Links
+
+---
+
+* https://github.com/trotttrotttrott
+* http://twitter.com/trotttrotttrott
+* http://www.linkedin.com/in/trotttrotttrott
+
+<p style="font-size: 14px;">Commit history for this page: <br /><a href="https://github.com/trotttrotttrott/trotttrotttrott.github.com/commits/source/source/resume/index.markdown" target="_blank">https://github.com/trotttrotttrott/trotttrotttrott.github.com/commits/source/source/resume/index.markdown</a></p>
