@@ -1,0 +1,36 @@
+@import "foundation";
+
+@font-face {
+  font-family: "SubwayTicker";
+  src: url(/fonts/subway_ticker-webfont.eot);
+  src: url(/fonts/subway_ticker-webfont.eot?#iefix) format('eot'),
+       url(/fonts/subway_ticker-webfont.ttf) format('truetype'),
+       url(/fonts/subway_ticker-webfont.woff) format('woff'),
+       url(/fonts/subway_ticker-webfont.svg) format('svg');
+}
+
+body {
+  padding: 50px 0;
+}
+
+h1 {
+  font-family: "SubwayTicker";
+}
+
+a {
+  color: inherit;
+
+  &:hover {
+    color: inherit;
+  }
+}
+
+#navigation {
+  margin-top: 25px;
+  text-align: center;
+
+  li {
+    display: inline;
+    padding: 0 10px;
+  }
+}
