@@ -1,6 +1,7 @@
 require "./shotgun"
 require "./lib/helpers"
 require "./lib/pygments"
+require "./lib/posts"
 
 Cuba.use Sass::Plugin::Rack
 
@@ -16,7 +17,7 @@ Cuba.define do
   on get do
 
     on root do
-      render "root", :posts => posts
+      render "root", :posts => Posts.details
     end
 
     on "post/:y/:m/:d/:slug" do |y, m, d, slug|
