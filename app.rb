@@ -16,7 +16,7 @@ Cuba.define do
   on get do
 
     on root do
-      render "root"
+      render "root", :posts => posts
     end
 
     on "post/:y/:m/:d/:slug" do |y, m, d, slug|

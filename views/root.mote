@@ -8,6 +8,10 @@
 <div class="row">
   <div class="large-12 columns">
     <p>Chris Trott. Hacker of things - UNIX, Ruby, guitar electronics.</p>
-    <p>root</p>
+    % posts.each do |post|
+      <p>
+        <a href="{{ post[:path] }}">{{ post[:title] }}</a>
+      </p>
+    % end
   </div>
 </div>
