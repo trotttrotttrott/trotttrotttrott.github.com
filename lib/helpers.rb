@@ -9,9 +9,11 @@ module Helpers
       post.slice! "markdown"
       post.slice! ".md"
       post.sub! "posts", "post"
+      split = post.split("/")
       {
         :path => post,
-        :title => post.split("/").last
+        :title => split.last,
+        :date => "#{split[3]}/#{split[4]}/#{split[2]}"
       }
     end
   end
