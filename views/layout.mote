@@ -5,10 +5,6 @@
     <link rel="stylesheet" type="text/css" href="/stylesheets/app.css">
   </head>
   <body>
-    <div class="row">
-      <div class="large-12 columns">
-        {{ content }}
-      </div>
-    </div>
+    {{ content }}
   </body>
 </html>
