@@ -10,7 +10,7 @@ Cuba.plugin Helpers
 
 Cuba.use Rack::Static,
   urls: %w(/stylesheets /fonts /images),
-  root: "./public"
+  root: "./"
 
 Cuba.define do
 
