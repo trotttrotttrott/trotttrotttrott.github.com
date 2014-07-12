@@ -1,5 +1,6 @@
 require "./shotgun"
 require "./lib/helpers"
+require "./lib/pygments"
 
 Cuba.use Sass::Plugin::Rack
 
