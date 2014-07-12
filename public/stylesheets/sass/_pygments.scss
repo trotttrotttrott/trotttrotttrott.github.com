@@ -10,7 +10,6 @@
   text-align: right;
   font-size: 13px;
   line-height: 1.45em;
-  background: #222 url('/images/noise.png?1405194816') top left !important;
   border-right: 1px solid #000 !important;
   -webkit-box-shadow: #272727 -1px 0 inset;
   -moz-box-shadow: #272727 -1px 0 inset;
@@ -61,7 +60,6 @@ html .gist .gist-file .gist-meta {
   border: 1px solid #272727 !important;
   color: #fff;
   font-size: .7em !important;
-  background: #222 url('/images/noise.png?1405194816') top left;
   line-height: 1.5em;
 }
 
@@ -95,7 +93,6 @@ html .gist .gist-file .gist-meta a[href*=raw] {
 }
 
 pre {
-  background: #000 url('/images/noise.png?1405194816') top left;
   -webkit-border-radius: 0.4em;
   -moz-border-radius: 0.4em;
   -ms-border-radius: 0.4em;
@@ -150,7 +147,6 @@ p pre code,li pre code {
   padding: .8em !important;
   overflow-x: auto;
   line-height: 1.45em;
-  background: #000 url('/images/noise.png?1405194816') top left !important;
   color: #93a1a1 !important;
 }
 
