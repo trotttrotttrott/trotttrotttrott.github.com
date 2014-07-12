@@ -22,9 +22,5 @@ Cuba.define do
     on "post/:y/:m/:d/:slug" do |y, m, d, slug|
       render "post", :post => markdown("posts/#{y}/#{m}/#{d}/#{slug}")
     end
-
-    on "posts" do
-      render "posts"
-    end
   end
 end
