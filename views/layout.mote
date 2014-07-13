@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
   <head>
-    <title>trotttrotttrott</title>
+    <title>{{ title }}</title>
     <link rel="stylesheet" type="text/css" href="/stylesheets/app.css">
   </head>
   <body>
