@@ -5,12 +5,14 @@ require "./lib/posts"
 
 Cuba.use Sass::Plugin::Rack
 
+Sass::Plugin.options[:css_location] = "stylesheets"
+
 Cuba.plugin Mote::Render
 Cuba.plugin Helpers
 
 Cuba.use Rack::Static,
   urls: %w(/stylesheets /fonts /images),
-  root: "./"
+  root: "."
 
 Cuba.define do
 
