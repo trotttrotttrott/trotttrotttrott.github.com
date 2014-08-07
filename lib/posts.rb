@@ -10,8 +10,8 @@ class Posts
       end
     end
 
-    def details
-      paths.map do |post|
+    def details(filter = nil)
+      all = paths.map do |post|
         split = post.split("/")
         {
           :path => post,
@@ -19,6 +19,15 @@ class Posts
           :date => "#{split[3]}/#{split[4]}/#{split[2]}"
         }
       end
+      return all if filter.nil?
+      all.find_all { |it| it[:title].split("-").first == filter }
+    end
+
+    def filters
+      paths.map do |post|
+        split = post.split("/")
+        split.last.split("-").first
+      end.sort
     end
   end
 end

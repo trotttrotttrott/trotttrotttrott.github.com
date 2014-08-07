@@ -1,19 +1,26 @@
 <div class="row">
   <div class="large-8 columns">
-    <h1>trotttrotttrott</h1>
+    <h1>
+      <a href="/">trotttrotttrott</a>
+    </h1>
   </div>
 </div>
 <div class="row">
   <div class="large-12 columns">
     <ul class="inline-list">
       <li>
-        <a href="http://github.com/trotttrotttrott">github</a>
+        <a href="http://github.com/trotttrotttrott">@github</a>
       </li>
-      <li>.</li>
       <li>
-        <a href="http://twitter.com/trotttrotttrott">twitter</a>
+        <a href="http://twitter.com/trotttrotttrott">@twitter</a>
       </li>
-      <li>.</li>
+    </ul>
+    <ul class="inline-list">
+      % filters.each do |filter|
+        <li>
+          <a href="/filter/{{ filter }}">#{{ filter }}</a>
+        </li>
+      % end
     </ul>
     % posts.each do |post|
       <p>

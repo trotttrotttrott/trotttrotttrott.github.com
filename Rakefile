@@ -16,6 +16,15 @@ task :generate do
     f.write(mock.get("/").body)
   end
 
+  Posts.filters.each do |filter|
+    path = "./filter/#{filter}.html"
+    dir = File.dirname(path)
+    FileUtils.mkpath(dir) unless File.exists?(dir)
+    File.open(path, "w+") do |f|
+      f.write(mock.get("/filter/#{filter}").body)
+    end
+  end
+
   Posts.paths.each do |post|
     path = ".#{post}.html"
     dir = File.dirname(path)

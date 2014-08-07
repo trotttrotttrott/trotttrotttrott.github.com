@@ -19,11 +19,20 @@ Cuba.define do
   on get do
 
     on root do
-      render "root", :posts => Posts.details, :title => "trotttrotttrott"
+      render "root", :posts => Posts.details,
+                     :title => "trotttrotttrott",
+                     :filters => Posts.filters
+    end
+
+    on "filter/:filter" do |filter|
+      render "root", :posts => Posts.details(filter),
+                     :title => "trotttrotttrott - ##{filter}",
+                     :filters => Posts.filters
     end
 
     on "post/:y/:m/:d/:slug" do |y, m, d, slug|
-      render "post", :post => markdown("posts/#{y}/#{m}/#{d}/#{slug}"), :title => slug
+      render "post", :post => markdown("posts/#{y}/#{m}/#{d}/#{slug}"),
+                     :title => slug
     end
   end
 end
