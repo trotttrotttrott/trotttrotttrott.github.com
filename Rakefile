@@ -5,6 +5,7 @@ desc "Remove all generated html"
 task :clean do
   FileUtils.rm("index.html")
   FileUtils.rm_r("post")
+  FileUtils.rm_r("filter")
 end
 
 desc "Generates static html files"
