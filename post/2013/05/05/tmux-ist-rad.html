@@ -34,14 +34,14 @@
 <span class="line-number">3</span>
 <span class="line-number">4</span>
 <span class="line-number">5</span>
-</pre></td><td class="code"><pre><code class="bash"><span class="line"><span class="c"># moving between panes</span>
-</span><span class="line"><span class="nb">bind </span>h <span class="k">select</span>-pane -L
-</span><span class="line"><span class="nb">bind </span>j <span class="k">select</span>-pane -D
-</span><span class="line"><span class="nb">bind </span>k <span class="k">select</span>-pane -U
-</span><span class="line"><span class="nb">bind </span>l <span class="k">select</span>-pane -R
+</pre></td><td class="code"><pre><code class="bash"><span class="line"><span></span><span class="c1"># moving between panes</span>
+</span><span class="line"><span class="nb">bind</span> h <span class="k">select</span>-pane -L
+</span><span class="line"><span class="nb">bind</span> j <span class="k">select</span>-pane -D
+</span><span class="line"><span class="nb">bind</span> k <span class="k">select</span>-pane -U
+</span><span class="line"><span class="nb">bind</span> l <span class="k">select</span>-pane -R
 </span></code></pre></td></tr></table></div><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
 <span class="line-number">2</span>
-</pre></td><td class="code"><pre><code class="bash"><span class="line"><span class="c"># enable vi keys.</span>
+</pre></td><td class="code"><pre><code class="bash"><span class="line"><span></span><span class="c1"># enable vi keys.</span>
 </span><span class="line">setw -g mode-keys vi
 </span></code></pre></td></tr></table></div>
 <ul>
@@ -49,8 +49,8 @@
 </ul>
 <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
 <span class="line-number">2</span>
-</pre></td><td class="code"><pre><code class="bash"><span class="line"><span class="c"># Allow use of unnamed clipboard in vim and stuff</span>
-</span><span class="line"><span class="nb">set</span>-option -g default-command <span class="s1">&#39;reattach-to-user-namespace -l bash&#39;</span>
+</pre></td><td class="code"><pre><code class="bash"><span class="line"><span></span><span class="c1"># Allow use of unnamed clipboard in vim and stuff</span>
+</span><span class="line">set-option -g default-command <span class="s1">&#39;reattach-to-user-namespace -l bash&#39;</span>
 </span></code></pre></td></tr></table></div>
 <p>This requires you to install <code>reattach-to-user-namespace</code>. This article helped me understand: <a href="http://robots.thoughtbot.com/post/19398560514/how-to-copy-and-paste-with-tmux-on-mac-os-x">http://robots.thoughtbot.com/post/19398560514/how-to-copy-and-paste-with-tmux-on-mac-os-x</a>.</p>
 
@@ -61,10 +61,10 @@
 <span class="line-number">2</span>
 <span class="line-number">3</span>
 <span class="line-number">4</span>
-</pre></td><td class="code"><pre><code class="bash"><span class="line"><span class="c"># Use C-space of C-b as prefix</span>
+</pre></td><td class="code"><pre><code class="bash"><span class="line"><span></span><span class="c1"># Use C-space of C-b as prefix</span>
 </span><span class="line"><span class="nb">set</span> -g prefix C-space
 </span><span class="line">unbind C-b
-</span><span class="line"><span class="nb">bind </span>C-space send-prefix
+</span><span class="line"><span class="nb">bind</span> C-space send-prefix
 </span></code></pre></td></tr></table></div>
 <p>I found C-b to be kind of awkward. C-a is a popular alternative as it&#39;s what <a href="http://www.gnu.org/software/screen/">screen</a> uses, but C-a also jumps to the beginning of a line in bash. There&#39;s no way I&#39;m going to sacrifice C-a in bash. So I landed on C-space. It doesn&#39;t collide with any other shortcuts (that I&#39;m aware of) and it allows me to keep my right hand on the home row so I&#39;m ready to bang on my primary vim navigation keys: <code>h</code>, <code>j</code>, <code>k</code>, &amp; <code>l</code>.</p>
 
@@ -75,11 +75,11 @@
 <span class="line-number">4</span>
 <span class="line-number">5</span>
 <span class="line-number">6</span>
-</pre></td><td class="code"><pre><code class="bash"><span class="line"><span class="c">#! /bin/bash</span>
+</pre></td><td class="code"><pre><code class="bash"><span class="line"><span></span><span class="ch">#! /bin/bash</span>
 </span><span class="line">
-</span><span class="line"><span class="c"># show 256 terminal colors</span>
-</span><span class="line"><span class="k">for</span> i in <span class="o">{</span>0..255<span class="o">}</span> <span class="p">;</span> <span class="k">do</span>
-</span><span class="line">  <span class="nb">printf</span> <span class="s2">&quot;\x1b[38;5;${i}mcolour${i}\n&quot;</span>
+</span><span class="line"><span class="c1"># show 256 terminal colors</span>
+</span><span class="line"><span class="k">for</span> i in <span class="o">{</span><span class="m">0</span>..255<span class="o">}</span> <span class="p">;</span> <span class="k">do</span>
+</span><span class="line">  <span class="nb">printf</span> <span class="s2">&quot;\x1b[38;5;</span><span class="si">${</span><span class="nv">i</span><span class="si">}</span><span class="s2">mcolour</span><span class="si">${</span><span class="nv">i</span><span class="si">}</span><span class="s2">\n&quot;</span>
 </span><span class="line"><span class="k">done</span>
 </span></code></pre></td></tr></table></div>
 <p>So now iTerm is out of my life, Terminal is back, and tmux is a key player.</p>

@@ -1,6 +1,6 @@
 require "cuba"
+require "mote"
 require "mote/render"
 require "redcarpet"
-require "rack/protection"
 require "sass/plugin/rack"
 require "pygments"
