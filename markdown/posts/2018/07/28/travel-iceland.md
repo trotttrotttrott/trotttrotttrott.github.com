@@ -53,7 +53,7 @@ You can take a day trip from Reykjavik and see a bunch of cool shit in the "gold
 
 We would have liked to go to this tomato place, Friðheimar, after Flúðir but they're only open from 12:00 - 16:00 and we were too late.
 
-![Þingvellir](/images/posts/20180728/Þingvellir.jpg)
+![thingvellir](/images/posts/20180728/thingvellir.jpg)
 ![gullfoss](/images/posts/20180728/gullfoss.jpg)
 ![secret-lagoon](/images/posts/20180728/secret-lagoon.jpg)
 
