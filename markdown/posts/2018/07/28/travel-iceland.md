@@ -2,7 +2,7 @@
 
 I'm approaching the end of a week in Iceland with my dad. It's the first time in years since I actually took time off to explore a place. Usually I just do it over a weekend after working nearby Monday through Friday. This has been different. I've been intentional about seeing all the sights or whatever. I posted an image or two on Instagram and folks started asking if I'd give them some tips because they'd be visiting sometime.
 
-First off, we had no idea where we were going to go when we got here. Two days before arriving, I reserved an SUV with Ace and booked a place in Reykjavik for two nights on Airbnb. The SUV was expensive - five hundred and something USD base price and another three hundred and something for insurance. I learned very quickly that **everything is expensive**. My first tip is to bring a bunch of fucking money.
+First off, we had no idea where we were going to go when we got here. Two days before arriving, I reserved an SUV with Ace and booked a place in Reykjavik for two nights on Airbnb. The SUV was expensive - five hundred and something USD base price and another three hundred and something for insurance. I learned very quickly that **everything is expensive**. My first tip is to bring a bunch of money.
 
 I actually arrived a day before my pops so I picked up the car and stayed in Keflavik. This is where the international airport actually is - about 50km from Reykjavik. My Reykjavik reservation started the following day when he arrived. This first night, my Airbnb host was a woman named Valgerdur. Icelandic names are intense.
 
@@ -28,9 +28,7 @@ You can go to Mikkeller to get some fancy beers. They cost 1700kr a piece though
 
 Walk by Harpa. It's the concert hall out on the waterfront. This doesn't really need to be said. It can't be missed.
 
-Walk by Hallgrimskirkja - the enormous fucking cathedral with Leif Erikson out front. Again, can't miss it.
-
-If you want to stay up late and spend a million dollars, maybe get a tequila at Pablo Discobar and a beer at The Dubliner.
+Walk by Hallgrimskirkja - the enormous cathedral with Leif Erikson out front. Again, can't miss it.
 
 If you want to go for a swim, go to Sundhöll. It costs money to enter - 1500kr or something. Bring a towel because it costs just as much to rent one. You have to get butt-ass naked in a locker room shower and wash your bum, crotch, pitts, and feet before you can get in a pool (there's a stick figure diagram). Someone told me that people will call you out if you try to skip it. Whatever, just do it.
 
@@ -43,13 +41,13 @@ If you want to go for a swim, go to Sundhöll. It costs money to enter - 1500kr 
 
 You can take a day trip from Reykjavik and see a bunch of cool shit in the "golden circle". We did this on our only full day in Reykjavik. There's a million and a half websites about this and many different versions. This is what we did:
 
-* **Þingvellir** - big fucking lake.
+* **Þingvellir** - big lake.
 * **Geysir** - geysers are awesome.
 * **Gullfoss** - things with "foss" in their name means they're a waterfall.
 * **Secret Lagoon in Flúðir** - rad hot spring.
 * **Kerið** - volcanic crater.
 
- <iframe src="https://www.google.com/maps/embed?pb=!1m52!1m12!1m3!1d444820.5372546025!2d-21.534696465548173!3d64.18265723480381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m37!3e0!4m5!1s0x48d674b9eedcedc3%3A0xec912ca230d26071!2sReykjav%C3%ADk!3m2!1d64.12652059999999!2d-21.8174392!4m5!1s0x48d6811ffb13697b%3A0x6b756c8b079262f2!2sThingvellir+National+Park!3m2!1d64.2558284!2d-21.1298615!4m5!1s0x48d6a39f03424f3f%3A0xb4751c1a62e2283f!2sGeysir!3m2!1d64.31037189999999!2d-20.3023605!4m5!1s0x48d6a50c0129fe95%3A0xeab94584c4e4c57d!2sGullfoss!3m2!1d64.3248241!2d-20.1311833!4m5!1s0x48d695f3fbcf3a03%3A0xba84220820d3b4a9!2sSecret+Lagoon+Hot+Spring%2C+Hvammsvegur%2C+Fl%C3%BA%C3%B0ir!3m2!1d64.1373711!2d-20.309359399999998!4m5!1s0x48d68bb755f6f257%3A0x515a44e0c12ed907!2zS2VyacOw!3m2!1d64.04127849999999!2d-20.8851466!5e0!3m2!1sen!2sis!4v1532851673621" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m52!1m12!1m3!1d444820.5372546025!2d-21.534696465548173!3d64.18265723480381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m37!3e0!4m5!1s0x48d674b9eedcedc3%3A0xec912ca230d26071!2sReykjav%C3%ADk!3m2!1d64.12652059999999!2d-21.8174392!4m5!1s0x48d6811ffb13697b%3A0x6b756c8b079262f2!2sThingvellir+National+Park!3m2!1d64.2558284!2d-21.1298615!4m5!1s0x48d6a39f03424f3f%3A0xb4751c1a62e2283f!2sGeysir!3m2!1d64.31037189999999!2d-20.3023605!4m5!1s0x48d6a50c0129fe95%3A0xeab94584c4e4c57d!2sGullfoss!3m2!1d64.3248241!2d-20.1311833!4m5!1s0x48d695f3fbcf3a03%3A0xba84220820d3b4a9!2sSecret+Lagoon+Hot+Spring%2C+Hvammsvegur%2C+Fl%C3%BA%C3%B0ir!3m2!1d64.1373711!2d-20.309359399999998!4m5!1s0x48d68bb755f6f257%3A0x515a44e0c12ed907!2zS2VyacOw!3m2!1d64.04127849999999!2d-20.8851466!5e0!3m2!1sen!2sis!4v1532851673621" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
 
 We would have liked to go to this tomato place, Friðheimar, after Flúðir but they're only open from 12:00 - 16:00 and we were too late.
 
@@ -95,9 +93,9 @@ I would have liked to cruise up to Skaftafell in Vatnajökull National Park, but
 
 ### Burnout
 
-You get to a point, day after day, seeing some of the most beautiful landscapes in the world that you get a little indifferent. You say things like, "oh, it's another fucking waterfall, another hot spring-glacier thing, and okay, more lava or something...". It's time for a break.
+You get to a point, day after day, seeing some of the most beautiful landscapes in the world that you get a little indifferent. You say things like, "oh, it's another waterfall, another hot spring-glacier thing, and okay, more lava or something...". It's time for a break.
 
-This USA, Floridian fella also staying at Hrafnavellir said Egilsstaðir is a good halfway point to another (fucking) waterfall. Sounded good and it was only a two hour drive up. We went for it being that we didn't have any plans anyway. It was a decent stop, but not where I'd picture us to be at any point. Next tip: don't listen to Floridians...ever.
+This USA, Floridian fella also staying at Hrafnavellir said Egilsstaðir is a good halfway point to another waterfall. Sounded good and it was only a two hour drive up. We went for it being that we didn't have any plans anyway. It was a decent stop, but not where I'd picture us to be at any point. Next tip: don't listen to Floridians...ever.
 
 ### Dettifoss
 
@@ -122,7 +120,7 @@ We're in Oddsstaðir. This isn't a town. It's my understanding that properties a
 
 The property is basically town-size, but we haven't seen anyone. Just horses.
 
-We left Akureyri somewhat hastily assuming we'd be able to get supplies along the way. But options were much more sparse than anticipated. We did pick up a 10 pack of beer and some bananas on the way out of town. We didn't think this would be all we'd end up with for the night. After four hours of driving, we arrived to our secluded destination. We ran out of beer fast. It's been 10ºC, windy, and rainy. We went for a walk, and then decided we'd drive 20km to a bar that shows up on Google Maps. We had been considering this for a while but I think finally got loose and hungry enough to go seek it out. Through the night sunlight we drove and finally arrived at Hverinn. It was magnificent. It's a campsite with a great restaurant. We split a burger and got a few more beers and watched part of "Truman Show" with no audio, just subtitles.
+We left Akureyri somewhat hastily assuming we'd be able to get supplies along the way. But options were much more sparse than anticipated. We did pick up a 10 pack of beer and some bananas on the way out of town. We didn't think this would be all we'd end up with for the night. After four hours of driving, we arrived to our secluded destination. We ran out of beer fast. It's been 10ºC, windy, and rainy. We went for a walk, and then decided we'd drive 20km to a bar that shows up on Google Maps. We had been considering this for a while but I think finally got loose and hungry enough to go seek it out. Through the night sunlight we drove and finally arrived at Hverinn. It was magnificent. It's a campsite with a great restaurant. We split a burger and got a few more beers and watched part of "Truman Show" with no audio.
 
 ![oddssta](/images/posts/20180728/oddssta.jpg)
 ![oddssta-tractors](/images/posts/20180728/oddssta-tractors.jpg)
