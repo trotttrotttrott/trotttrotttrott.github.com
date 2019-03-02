@@ -3,7 +3,7 @@ class Posts
   class << self
 
     def paths
-      Dir.glob("markdown/posts/**/*/*.md").reverse.map do |post|
+      Dir.glob("markdown/posts/**/*/*.md").sort.reverse.map do |post|
         post.slice! "markdown"
         post.slice! ".md"
         post.sub! "posts", "post"
