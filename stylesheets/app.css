@@ -2759,25 +2759,17 @@ figure.code .highlight {
   src: url(/fonts/subway_ticker-webfont.eot);
   src: url(/fonts/subway_ticker-webfont.eot?#iefix) format("eot"), url(/fonts/subway_ticker-webfont.ttf) format("truetype"), url(/fonts/subway_ticker-webfont.woff) format("woff"), url(/fonts/subway_ticker-webfont.svg) format("svg"); }
 body {
-  padding: 50px 0;
-  background-color: #ff00ff;
-  color: #fff; }
+  padding: 50px 0; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "SubwayTicker";
-  margin-bottom: 10px;
-  color: #00ffff; }
+  margin-bottom: 10px; }
   h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-    color: inherit; }
-    h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
-      color: #000; }
+    color: #000; }
 
 a {
-  color: #ffff00; }
+  color: #666; }
   a:hover {
     color: inherit; }
-
-blockquote p {
-  color: #00ffff; }
 
 /*# sourceMappingURL=app.css.map */
