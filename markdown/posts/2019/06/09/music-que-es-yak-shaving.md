@@ -1,4 +1,4 @@
-## Qué Es Yak Shaving
+## Que Es Yak Shaving
 
 I spend a lot of time getting ready to do what I'd like to actually do. Especially with music. Probably because my musical goals are undefined; I have no idea what I actually want to do. But I know I should get ready for it. And when I'm finished getting ready, I imagine it's going to be awesome.
 
