@@ -27,7 +27,7 @@ class Posts
       paths.map do |post|
         split = post.split("/")
         split.last.split("-").first
-      end.sort
+      end.uniq.sort
     end
   end
 end
