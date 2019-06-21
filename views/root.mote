@@ -33,7 +33,11 @@
     </ul>
     % posts.each do |post|
       <p>
-        <a href="{{ post[:path] }}">{{ post[:date] }} - {{ post[:title] }}</a>
+        <a href="{{ post[:path] }}">
+          % title = post[:title].split '-'
+          <span>{{ title[1..-1].join(' ').capitalize }} .</span>
+          <small>{{ post[:date] }} . #{{ title[0] }}</small>
+        </a>
       </p>
     % end
   </div>
