@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+  <head>
+    <title>dev-cassandra-anti-entropy-repair-with-carousul</title>
+    <link href="/images/favicon.png" rel="icon">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/app.css">
+  </head>
+  <body>
+    <div class="row">
+  <div class="large-12 columns">
+    <h2><a href="https://github.com/trotttrotttrott/carousul">Carousul</a> . <small>06/21/2019</small></h2>
+
+<blockquote>
+<p><strong>C</strong>assandra <strong>A</strong>nti-entropy <strong>R</strong>epair <strong>ou</strong> Con<strong>sul</strong></p>
+</blockquote>
+
+<p>A few definitions for context...</p>
+
+<h6><a href="http://cassandra.apache.org/">Cassandra</a></h6>
+
+<p>A masterless, multi-node, multi-region database that boasts linear scalability, high availability, and fault tolerance.</p>
+
+<h6><a href="https://en.wikipedia.org/wiki/Entropy_(disambiguation)">Entropy</a></h6>
+
+<p>In the case of databases, the tendency to become increasingly disordered. Frequent data deletions and downed nodes are common causes.</p>
+
+<h6>Anti-entropy Repair</h6>
+
+<p>The act of reconciling disorder within a database system. It&#39;s performed to ensure data consistency across replicas.</p>
+
+<h3>Problem</h3>
+
+<p>Cassandra does not perform anti-entropy repair automatically. However, the <a href="https://docs.datastax.com/en/archived/cassandra/3.0/cassandra/tools/toolsNodetool.html">nodetool utility</a> provides the <a href="https://docs.datastax.com/en/archived/cassandra/3.0/cassandra/tools/toolsRepair.html"><code>nodetool repair</code></a> command for performing it. It&#39;s <a href="https://docs.datastax.com/en/archived/cassandra/3.0/cassandra/operations/opsRepairNodesTOC.html">documented</a> that operators should &quot;...use nodetool repair as part of your regular maintenance routine...&quot;. But who even has a regular maintenance routine in 2019? It seems to me a more honest recommendation would be to automate this as well as you can because it&#39;s too complicated for a masterless, distributed database cluster to coordinate automatically out of the box.</p>
+
+<p>I&#39;ve observed that there&#39;s a fair amount of confusion regarding which nodes must run <code>nodetool repair</code> to fully repair a cluster. Though some are dated, the following threads demonstrate this...</p>
+
+<ul>
+<li><a href="https://stackoverflow.com/questions/37921042/cassandra-nodetool-repair-best-practices">https://stackoverflow.com/questions/37921042/cassandra-nodetool-repair-best-practices</a></li>
+<li><a href="https://dba.stackexchange.com/questions/82414/do-you-have-to-run-nodetool-repair-on-every-node">https://dba.stackexchange.com/questions/82414/do-you-have-to-run-nodetool-repair-on-every-node</a></li>
+<li><a href="https://stackoverflow.com/questions/54006795/cassandra-sequential-repair-does-not-repair-all-nodes-on-one-run">https://stackoverflow.com/questions/54006795/cassandra-sequential-repair-does-not-repair-all-nodes-on-one-run</a></li>
+</ul>
+
+<p>The accepted answer from the first link states that you only need to run the repair operation on one node in a cluster and you&#39;re done. The accepted answer of the second states that you need to run repair on every node in the cluster. The third answer aligns with the second - every single node.</p>
+
+<p>Depending on replication factors and node counts, each answer may be true. For example, if each datacenter has 3 nodes and your replication factor is 3, then running repair on a single node may be adequate for completing the job. However, if each datacenter has 5 nodes and your replication factor is 3, then you are only guaranteed to have repaired 3/5 of all data.</p>
+
+<p>In the latter case, you must run repair on all nodes at least within a single datacenter to repair all data. I say, &quot;at least&quot;, because more repairs may be required if replication factors are not consistent among datacenters. On top of that, only one node can be repaired at a time.</p>
+
+<p>One more definition...</p>
+
+<h6><a href="https://www.consul.io/"><strong>Consul</strong></a></h6>
+
+<p>A distributed service mesh. It can also be described as a key/value store, event system, and DNS resolver. In addition to all of that, it provides a <a href="https://www.consul.io/docs/internals/sessions.html">session mechanism</a> that can be used for building distributed locks.</p>
+
+<h3>Solution</h3>
+
+<p>Automate the repair of all nodes within a single datacenter, one at a time. &quot;Carousul&quot; is what I came up with - <a href="https://github.com/trotttrotttrott/carousul">https://github.com/trotttrotttrott/carousul</a>.</p>
+
+<p>It&#39;s a Go program that performs datacenter parallel repairs while using Consul for distributed locking to ensure that only the node that holds the lock can perform a repair. Repairs are performed one by one until each has had a turn obtaining the lock and completing the repair operation.</p>
+
+<p>In addition, it outputs metrics to file for a Prometheus <a href="https://github.com/prometheus/node_exporter#textfile-collector">node exporter textfile collector</a> to consume.</p>
+
+<p>Carousul&#39;s limitation is that it can only run in a single datacenter at a time because Consul cannot hold sessions across datacenters. This is fine if you only need to run repair in a single datacenter to complete the job. If not, this is not a complete solution - further synchronization must occur.</p>
+
+  </div>
+</div>
+<div class="row">
+  <div class="large-12 columns">
+    <div id="disqus_thread"></div>
+<script type="text/javascript">
+  /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+  var disqus_shortname = 'trotttrotttrott'; // required: replace example with your forum shortname
+
+  /* * * DON'T EDIT BELOW THIS LINE * * */
+  (function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+  </div>
+</div>
+
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-46625679-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+  </body>
+</html>
