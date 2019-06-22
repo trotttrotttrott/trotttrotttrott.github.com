@@ -3,8 +3,10 @@
     {{ post }}
   </div>
 </div>
+% unless ENV.fetch('RACK_ENV', nil) == 'development'
 <div class="row">
   <div class="large-12 columns">
     {{ app.partial("_disqus") }}
   </div>
 </div>
+% end
