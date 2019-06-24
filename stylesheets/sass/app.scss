@@ -27,6 +27,14 @@ a {
   color: #666;
 
   &:hover {
-    color: inherit;
+    color: #000;
+  }
+
+  span.date {
+    color: #999;
+  }
+
+  &:hover span.date {
+    color: #777;
   }
 }
