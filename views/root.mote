@@ -30,6 +30,11 @@
           <a href="/filter/{{ filter }}">#{{ filter }}</a>
         </li>
       % end
+      <li>
+        <a href="/">
+          <small>show all</small>
+        </a>
+      </li>
     </ul>
     % posts.each do |post|
       <p>
