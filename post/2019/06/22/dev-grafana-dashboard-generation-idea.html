@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+  <head>
+    <title>dev-grafana-dashboard-generation-idea</title>
+    <link href="/images/favicon.png" rel="icon">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/app.css">
+  </head>
+  <body>
+    <div class="row">
+  <div class="large-12 columns">
+    <h2>Grafana Dashboard Generation Idea . <small>06/22/2019</small></h2>
+
+<p>New issue:</p>
+
+<blockquote>
+<p>As a metrics observer, I would like to define Grafana dashboards as code and check them into source control.</p>
+
+<p>The code would not be JSON. It would be in a configuration or programming language that would be able to output complete dashboard JSON. I&#39;d like to define and own the absolute minimum amount of code.</p>
+</blockquote>
+
+<p>How to proceed?</p>
+
+<p>Such tools exist to facilitate this, however, the community is far from agreeing on a standard. This thread from over a year ago seems to accurately call out current competing standards:</p>
+
+<p><a href="https://community.grafana.com/t/grafana-dashboards-as-code-for-newcomers/5334">https://community.grafana.com/t/grafana-dashboards-as-code-for-newcomers/5334</a></p>
+
+<p>These are probably the top three:</p>
+
+<ul>
+<li><a href="https://github.com/uber/grafana-dash-gen">https://github.com/uber/grafana-dash-gen</a></li>
+<li><a href="https://github.com/weaveworks/grafanalib">https://github.com/weaveworks/grafanalib</a></li>
+<li><a href="https://github.com/grafana/grafonnet-lib">https://github.com/grafana/grafonnet-lib</a></li>
+</ul>
+
+<p>I&#39;ve even written such a tool myself in Ruby: <a href="https://github.com/trotttrotttrott/grafana-dash-rb">https://github.com/trotttrotttrott/grafana-dash-rb</a>.</p>
+
+<p>They all pretty much cover the bases.</p>
+
+<p>..</p>
+
+<p>But I&#39;m not writing to promote a specific tool. I&#39;m writing to suggest that we&#39;ve all got it wrong. Each solution probably works well enough for the individuals and teams who&#39;ve adopted them. But none of them seem strong enough to become a standard.</p>
+
+<p>It seems to me the issue is that they&#39;re each too deep in their respective lingual ecosystems - JavaScript, Python, Jsonnet, Ruby. Most folks will have a clear preference. The preference is likely based on which fits in better with their existing codebase and team familiarity.</p>
+
+<h3>HTTP API Clients</h3>
+
+<p>HTTP APIs tend to have client libraries in various languages. For example the Grafana API has ones in <a href="https://github.com/hartfordfive/ruby-grafana-api">Ruby</a>, <a href="https://pypi.org/project/grafana-api/">Python</a>, <a href="https://github.com/nytm/go-grafana-api">Go</a>, <a href="https://github.com/appnexus/grafana-api-java-client">Java</a>, <a href="https://github.com/asconix/grafana_elixir">Elixir</a>, <a href="https://www.npmjs.com/package/grafana-api-client">NodeJS</a>, and probably others.</p>
+
+<p>It&#39;s necessary because these libraries are going to be embedded into applications of various languages. Each of these client libraries are managed separately. When the Grafana API changes, each client library must be updated individually.</p>
+
+<p>Similarly, the same is true for Grafana dashboard schema changes and the many existing dashboarding tools.</p>
+
+<h3>Shared Data Among Tooling</h3>
+
+<p>To combat such isolated changes, there are tools emerging that are able to generate client libraries automatically for a variety of languages. For example, <a href="https://openapi-generator.tech/">OpenAPI Generator</a>/<a href="https://openapi-generator.tech/docs/faq#what-is-the-difference-between-swagger-codegen-and-openapi-generator">Swagger Codegen</a>. Such tools know the API and know how to generate boilerplate HTTP client code around it. HTTP client code does not need to be interesting or unique. There are response conditions that may need to be handled in unique ways due to context, but that can happen outside of API client code.</p>
+
+<p>Something similar is GCP&#39;s <a href="https://github.com/GoogleCloudPlatform/magic-modules">Magic Modules</a>. Magic Modules knows the GCP API and can automatically create support for Terraform, Ansible, and InSpec. Updating APIs and solving certain issues in a single place makes improvements for all of those tools.</p>
+
+<h3>Shared Grafana Models Among Languages</h3>
+
+<p>It seems to me the same could be done for Grafana dashboard schemas. A centralized schema definition could be used to generate Grafana dashboard libraries for a variety of languages. What&#39;s left is for teams to do what else is important to them and write actual dashboards in the language of their choice.</p>
+
+<p>This might eliminate the tug-of-war over who made the best dashboard generation tool. As well the speculation of which will eventually emerge as the standard.</p>
+
+<p>Having a central, well modeled, well versioned schema library that translates the same in any language, seems to me to be decent compromise.</p>
+
+<p>I don&#39;t have a PoC, just the preceding ramblings. I&#39;ll hopefully be able to follow up in another post with progress.</p>
+
+  </div>
+</div>
+<div class="row">
+  <div class="large-12 columns">
+    <div id="disqus_thread"></div>
+<script type="text/javascript">
+  /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+  var disqus_shortname = 'trotttrotttrott'; // required: replace example with your forum shortname
+
+  /* * * DON'T EDIT BELOW THIS LINE * * */
+  (function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+  </div>
+</div>
+
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-46625679-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+  </body>
+</html>
