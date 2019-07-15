@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+  <head>
+    <title>music-home-rig-planning</title>
+    <link href="/images/favicon.png" rel="icon">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/app.css">
+  </head>
+  <body>
+    <div class="row">
+  <div class="large-12 columns">
+    <h2>Home Rig Planning . <small>07/14/2019</small></h2>
+
+<h3>Guitar</h3>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+<span class="line-number">11</span>
+<span class="line-number">12</span>
+<span class="line-number">13</span>
+<span class="line-number">14</span>
+<span class="line-number">15</span>
+<span class="line-number">16</span>
+<span class="line-number">17</span>
+<span class="line-number">18</span>
+<span class="line-number">19</span>
+<span class="line-number">20</span>
+<span class="line-number">21</span>
+<span class="line-number">22</span>
+</pre></td><td class="code"><pre><code class=""><span class="line"><span></span>+--------+
+</span><span class="line">| guitar +-----+
+</span><span class="line">+--------+     |
+</span><span class="line">               |
+</span><span class="line">               |
+</span><span class="line">  (clean)    +-v-----+     (dist)
+</span><span class="line">  +----------+ a/b/y +----------+
+</span><span class="line">  |          +-------+          |
+</span><span class="line">  |                             |
+</span><span class="line">+-v----+                      +-v----+
+</span><span class="line">| dirt |                      | fuzz |
+</span><span class="line">+-+----+                      +-+----+
+</span><span class="line">  |                             |
+</span><span class="line">+-v----+     +--------+       +-v--+
+</span><span class="line">| snd/ +-----&gt; (mod-  |       | eq |
+</span><span class="line">| rtn  &lt;-----+  ular) |       +-+--+
+</span><span class="line">+-+----+     +--------+         |
+</span><span class="line">  |                             |
+</span><span class="line">  |                             |
+</span><span class="line">+-v-------+                   +-v----+
+</span><span class="line">| monarch |                   | mesa |
+</span><span class="line">+---------+                   +------+
+</span></code></pre></td></tr></table></div>
+<p>An a/b/y pedal at the beginning of the chain selects between clean and distortion signal paths.</p>
+
+<p>The clean path contains a Keeley Red Dirt and a Benson Monarch combo.</p>
+
+<p>The distortion path contains a Retro Mechanical Labs Electron Fuzz, an MXR M108S Ten Band EQ, a Mesa Boogie Stereo 2:Fifty, and a Marshall 2x12 cabinet.</p>
+
+<p>Unique to the clean channel is a send/return pedal that integrates with modular components. The appeal of integrating with modular is the use of time-based effects that are synchronized with clocks that are also controlling other time-based, modular components like sequencers.</p>
+
+<p>At this time, the only modular effect used with guitar is the 4ms Dual Looping Delay. The Doepher A-119 is used for input and the MengQiMusic Please Exist 2 is used for output.</p>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+</pre></td><td class="code"><pre><code class=""><span class="line"><span></span>  *
+</span><span class="line">  |
+</span><span class="line">+-v-------+    +-------+   +-----+
+</span><span class="line">|         +----&gt; A-119 +---&gt; DDD |
+</span><span class="line">| snd/rtn |    +-------+   +--+--+
+</span><span class="line">|         &lt;----+-----+        |
+</span><span class="line">+-+-------+    | PE2 &lt;--------+
+</span><span class="line">  |            +-----+
+</span><span class="line">  *
+</span></code></pre></td></tr></table></div>
+<h3>Microphone, Modular</h3>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+<span class="line-number">11</span>
+<span class="line-number">12</span>
+<span class="line-number">13</span>
+<span class="line-number">14</span>
+<span class="line-number">15</span>
+</pre></td><td class="code"><pre><code class=""><span class="line"><span></span>+-----+ +------------+
+</span><span class="line">| mic | | modular    |
+</span><span class="line">+-+---+ +-+------^-+-+
+</span><span class="line">  |       |      | |
+</span><span class="line">  |       |      | |
+</span><span class="line">+-v-------v-+    | |
+</span><span class="line">| mix8      +----+ |
+</span><span class="line">+-+-------^-+      |
+</span><span class="line">  |       |      +-v--------+
+</span><span class="line">  |       |      | blue sky |
+</span><span class="line">  |       |      +-+--------+
+</span><span class="line">  |       |        |
+</span><span class="line">+-v--+    |      +-v-----------+
+</span><span class="line">| PA |    +------+ el capistan |
+</span><span class="line">+----+           +-------------+
+</span></code></pre></td></tr></table></div>
+<p>Modular components output directly to a channel of the mixer. Other components are in the aux loop.</p>
+
+<p>The Mackie Mix8 has only a single aux loop so all inputs share it - mic and modular.</p>
+
+  </div>
+</div>
+<div class="row">
+  <div class="large-12 columns">
+    <div id="disqus_thread"></div>
+<script type="text/javascript">
+  /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+  var disqus_shortname = 'trotttrotttrott'; // required: replace example with your forum shortname
+
+  /* * * DON'T EDIT BELOW THIS LINE * * */
+  (function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+  </div>
+</div>
+
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-46625679-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+  </body>
+</html>
