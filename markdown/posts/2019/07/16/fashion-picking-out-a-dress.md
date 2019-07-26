@@ -27,3 +27,9 @@ I didn't care for any of the dresses in particular at the end. I liked them all,
 But then I did one more pass through on LuLu's and I found the perfect dress. I didn't send a picture. It was obvious.
 
 _...will update post with photo when it arrives..._
+
+### _UPDATE - 7/25_
+
+THE DRESS...
+
+![999](/images/posts/20190716/999.png)
