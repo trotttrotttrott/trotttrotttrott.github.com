@@ -13,12 +13,12 @@ task :generate do
 
   mock = Rack::MockRequest.new(Cuba)
 
-  File.open("index.html", "w+") do |f|
+  File.open("../index.html", "w+") do |f|
     f.write(mock.get("/").body)
   end
 
   Posts.filters.each do |filter|
-    path = "./filter/#{filter}.html"
+    path = "../filter/#{filter}.html"
     dir = File.dirname(path)
     FileUtils.mkpath(dir) unless File.exists?(dir)
     File.open(path, "w+") do |f|
@@ -27,7 +27,7 @@ task :generate do
   end
 
   Posts.paths.each do |post|
-    path = ".#{post}.html"
+    path = "..#{post}.html"
     dir = File.dirname(path)
     FileUtils.mkpath(dir) unless File.exists?(dir)
     File.open(path, "w+") do |f|
